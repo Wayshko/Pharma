@@ -1,0 +1,85 @@
+body {
+    background-color: #f7d9e8;
+}
+
+/* ===== ШАПКА ===== */
+
+.site-header {
+    background-image: url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%;
+}
+
+/* ===== МЕНЮ ===== */
+
+.main-menu {
+    background-color: #e3007d;
+    border-radius: 0.35rem;
+    overflow: hidden;
+}
+
+/* ===== КОНТЕНТ ===== */
+
+.content {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.35rem;
+}
+
+/* ===== ВИДЖЕТЫ ===== */
+
+.widget {
+    background-color: #fff3f8;
+    border: 0.0625rem solid #efbfd5;
+    border-radius: 0.35rem;
+    overflow: hidden;
+}
+
+.widget h3 {
+    background-color: #e3007d;
+}
+
+/* ===== ФОРМЫ ===== */
+
+input {
+    background-color: #ffffff;
+    border: 0.0625rem solid #d7a8bf;
+    padding: 0.4rem;
+}
+
+button {
+    border: none;
+    background-color: #e3007d;
+    border-radius: 0.35rem;
+    padding: 0.4rem 0.6rem;
+}
+
+/* ===== КАТАЛОГ ===== */
+
+.product {
+    background-color: #fff7fb;
+    border: 0.0625rem solid #efbfd5;
+    border-radius: 0.35rem;
+}
+
+.product img {
+    border-radius: 0.25rem;
+}
+
+.price {
+    background-color: #fff0f7;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+}
+
+/* ===== ЦВЕТЫ ===== */
+
+.flower-decoration {
+    background: transparent;
+}
+/* ===== ПОДВАЛ ===== */
+
+.site-footer {
+    background-color: #e3007d;
+    border-radius: 0.35rem;
+}

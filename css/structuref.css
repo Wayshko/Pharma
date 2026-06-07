@@ -1,0 +1,257 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.page {
+    width: 72%;
+    max-width: 64rem;
+    min-width: 0;
+    margin: 0 auto;
+}
+
+/* ===== ШАПКА ===== */
+
+.site-header {
+    width: 100%;
+    aspect-ratio: 1200 / 300;
+}
+
+/* ===== МЕНЮ ===== */
+
+.main-menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    flex: 0 1 auto;
+}
+
+/* ===== ОСНОВНАЯ ЧАСТЬ ===== */
+
+.site-main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2%;
+    margin-top: 0.75rem;
+}
+
+/* ===== КОЛОНКИ ===== */
+
+.left-sidebar,
+.right-sidebar {
+    width: 22%;
+}
+
+.content {
+    width: 52%;
+    min-height: 14rem;
+    padding: 0.85rem;
+}
+
+/* ===== ВИДЖЕТЫ ===== */
+
+.widget {
+    width: 100%;
+    margin-bottom: 0.85rem;
+}
+
+.widget h3 {
+    padding: 0.5rem 0.7rem;
+}
+
+.widget ul,
+.widget p,
+.widget form {
+    margin: 0;
+    padding: 0.65rem;
+}
+
+.widget form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+}
+
+.widget input {
+    flex: 1 1 6rem;
+    min-width: 0;
+}
+
+.widget button {
+    flex: 0 1 4.6rem;
+}
+
+/* ===== ПОСТ ===== */
+
+.post {
+    width: 100%;
+}
+
+.post-header {
+    margin-bottom: 0.9rem;
+}
+
+.post-body p {
+    margin-bottom: 1rem;
+}
+
+.post-footer {
+    text-align: right;
+    margin-top: 1.3rem;
+}
+
+/* ===== КАТАЛОГ ===== */
+
+.catalog-header {
+    margin-bottom: 1rem;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.9rem;
+}
+
+.product {
+    width: 100%;
+    padding: 0.8rem;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product h4 {
+    margin-top: 0.65rem;
+}
+
+.product p {
+    margin-top: 0.3rem;
+}
+
+.price {
+    margin-top: 0.45rem;
+    margin-bottom: 0.55rem;
+}
+
+.product button {
+    width: 100%;
+}
+
+/* ===== ДЕКОР ===== */
+.left-sidebar .widget:last-child,
+.right-sidebar .widget:last-child {
+    margin-bottom: 0;
+}
+
+.flower-decoration {
+    width: 100%;
+    margin-top: 0;
+}
+
+.flower-decoration img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ===== ПОДВАЛ ===== */
+
+.site-footer {
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* ===== ПЛАНШЕТ ===== */
+
+@media (max-width: 900px) {
+    .page {
+        width: 90%;
+        max-width: none;
+    }
+
+    .site-main {
+        flex-wrap: wrap;
+    }
+
+    .content {
+        width: 100%;
+        order: -1;
+        margin-bottom: 1rem;
+    }
+
+    .left-sidebar,
+    .right-sidebar {
+        width: 49%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===== ТЕЛЕФОН ===== */
+
+@media (max-width: 600px) {
+    .page {
+        width: 96%;
+    }
+
+    .site-header {
+        aspect-ratio: 1200 / 430;
+    }
+
+    .main-menu {
+        display: block;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+
+    .site-main {
+        display: block;
+    }
+
+    .left-sidebar,
+    .content,
+    .right-sidebar {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .widget form {
+        display: block;
+    }
+
+    .widget input,
+    .widget button {
+        width: 100%;
+        margin-bottom: 0.4rem;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+}

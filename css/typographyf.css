@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(0.78rem, 0.9vw, 0.95rem);
+    line-height: 1.5;
+    color: #5f4452;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+/* ===== МЕНЮ ===== */
+
+.main-menu a {
+    font-size: clamp(0.75rem, 0.85vw, 0.95rem);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/* ===== ВИДЖЕТЫ ===== */
+
+.widget h3 {
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
+    color: #ffffff;
+}
+
+.widget li,
+.widget p {
+    font-size: 0.85rem;
+}
+
+/* ===== ПОСТ ===== */
+
+.post-header h2 {
+    font-size: clamp(1.5rem, 2vw, 2.1rem);
+    color: #d10073;
+}
+
+.post-date {
+    font-size: 0.8rem;
+    color: #8f7080;
+}
+
+.post-body p {
+    font-size: 0.9rem;
+}
+
+.post-footer {
+    font-size: 0.85rem;
+}
+
+/* ===== КАТАЛОГ ===== */
+
+.catalog-header h2 {
+    font-size: clamp(1.5rem, 2vw, 2.1rem);
+    color: #d10073;
+}
+
+.catalog-header p {
+    font-size: 0.8rem;
+    color: #8f7080;
+}
+
+.product h4 {
+    font-size: 0.95rem;
+    color: #d10073;
+}
+
+.product p {
+    font-size: 0.8rem;
+}
+
+.price {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #e3007d;
+}
+
+/* ===== КНОПКИ ===== */
+
+button {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* ===== ПОДВАЛ ===== */
+
+.site-footer {
+    font-size: 0.8rem;
+    color: #ffffff;
+}
